@@ -1,3 +1,58 @@
-// @media(min-width: 992px) {
-    
-// }
+@use './colors' as *;
+@mixin small {
+	@media (min-width: 576px) {
+		.info {
+			grid-template-areas:
+				'title box'
+				'title box'
+				'title box';
+			padding: 10em 2em;
+
+			&__box {
+				display: grid;
+				justify-content: end;
+			}
+
+			&__title {
+				padding: 0 1em;
+			}
+
+			&__box-img,
+			&__box-text {
+				max-width: 500px;
+			}
+
+            &__bg-icon {
+                display: block;
+                position: absolute;
+                opacity: 0.05;
+                z-index: -5;
+
+                &--one {
+                    top: 14%;
+                    width: 20%;
+                    animation: rotate-right 120s infinite linear;
+                }
+                &--two {
+                    bottom: 10%;
+                    left: 10%;
+                    width: 30%;
+                    animation: rotate-left 100s infinite linear;
+                }
+                &--three {
+                    top: 26%;
+                    left: 16%;
+                    width: 50%;
+                    animation: rotate-left 120s infinite linear;
+                }
+                &--four {
+                    top: 50%;
+                    left: -10%;
+                    width: 15%;
+                    animation: rotate-right 100s infinite linear;
+                }
+            }
+
+		}
+	}
+}

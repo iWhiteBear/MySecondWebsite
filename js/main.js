@@ -20,7 +20,7 @@ const handleObserver = () => {
 	const currentSection = window.scrollY
 
 	allSections.forEach(section => {
-		if ((section.offsetTop = currentSection)) {
+		if (section.offsetTop <= currentSection) {
 			navBtn.classList.remove('is-active')
 			navMobile.classList.remove('nav-mobile--active')
 		}
