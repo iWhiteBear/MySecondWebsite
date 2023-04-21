@@ -217,67 +217,66 @@
 
         </section>
 
-<section class="newsletter">
+        <section class="newsletter">
 
-    <div class="wrapper newsletter__wrapper">
+            <div class="wrapper newsletter__wrapper">
 
-        <div class="newsletter__text">
-            <p>Sing up for newsletter...</p>
-        </div>
-        <div class="newsletter__form">
-            <input type="text" class="newsletter__form-input">
-            <button class="newsletter__form-button">Subscribe</button>
-        </div>
-        
-    </div>
+                <div class="newsletter__text">
+                    <p>Sing up for newsletter...</p>
+                </div>
+                <div class="newsletter__form">
+                    <input type="text" class="newsletter__form-input">
+                    <button class="newsletter__form-button">Subscribe</button>
+                </div>
 
-</section>
-
-
-<section class="galerry">
-
-    <img src="img/gallery/1.jpg" class="galerry__img" alt="Gold">
-    <img src="img/gallery/2.jpg" class="galerry__img" alt="Gold">
-    <img src="img/gallery/3.jpg" class="galerry__img" alt="Gold">
-    <img src="img/gallery/4.jpg" class="galerry__img" alt="Gold">
-    <img src="img/gallery/5.jpg" class="galerry__img" alt="Gold">
-    <img src="img/gallery/6.jpg" class="galerry__img" alt="Gold">
-    <img src="img/gallery/7.jpg" class="galerry__img" alt="Gold">
-    <img src="img/gallery/8.jpg" class="galerry__img" alt="Gold">
-
-</section>
-
-
-<section class="contact" id="contact">
-
-    <div class="wrapper">
-        <h2 class="section-title">contact <span>us</span> </h2>
-
-        <form  class="contact__form">
-
-            <div class="contact__form-box">
-                <label for="name"> Your Name: </label>
-                <input type="text" id="name">
-            </div>
-            <div class="contact__form-box">
-                <label for="mail"> Your Email: </label>
-                <input type="email" id="mail">
-            </div>
-            <div class="contact__form-box">
-                <label for="msg"> Message: </label>
-                <textarea id="msg" cols="30" rows="10"></textarea>
             </div>
 
-            <button type="submit" class="contact__form-btn">Send</button>
-
-        </form>
+        </section>
 
 
+        <section class="galerry">
 
-    </div>
+            <img src="img/gallery/1.jpg" class="galerry__img" alt="Gold">
+            <img src="img/gallery/2.jpg" class="galerry__img" alt="Gold">
+            <img src="img/gallery/3.jpg" class="galerry__img" alt="Gold">
+            <img src="img/gallery/4.jpg" class="galerry__img" alt="Gold">
+            <img src="img/gallery/5.jpg" class="galerry__img" alt="Gold">
+            <img src="img/gallery/6.jpg" class="galerry__img" alt="Gold">
+            <img src="img/gallery/7.jpg" class="galerry__img" alt="Gold">
+            <img src="img/gallery/8.jpg" class="galerry__img" alt="Gold">
+
+        </section>
 
 
-</section>
+        <section class="contact" id="contact">
+
+            <div class="wrapper">
+                <h2 class="section-title">contact <span>us</span> </h2>
+
+                <p class="msg-status"></p>
+
+                <form action="./php/mail.php" method="post" class="contact__form">
+
+                    <div class="contact__form-box">
+                        <label for="name"> Your Name: </label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="contact__form-box">
+                        <label for="mail"> Your Email: </label>
+                        <input type="email" id="mail" name="mail" required>
+                    </div>
+                    <div class="contact__form-box">
+                        <label for="msg"> Message: </label>
+                        <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact__form-btn">Send</button>
+
+                </form>
+
+            </div>
+
+        </section>
 
     </main>
 
